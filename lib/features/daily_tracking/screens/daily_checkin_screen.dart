@@ -124,7 +124,7 @@ class _DailyCheckinScreenState extends ConsumerState<DailyCheckinScreen> {
                           ),
                         ),
                       ),
-                      Expanded(child: ProgressChart(history: _history)),
+                      Expanded(child: ProgressChart(allHistories: {widget.goal.title: _history})),
                     ],
                   ),
                 ),
